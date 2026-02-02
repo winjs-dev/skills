@@ -73,15 +73,15 @@ description: WinJS HuiPro 模板（企业级 Web）开发指南。包含自定�
 
 ## 常用命令
 
-| 命令 | 说明 |
-|------|------|
-| `win dev` | 开发服务器 |
-| `win build` | 生产构建 |
-| `win preview` | 预览构建 |
-| `win see` | 构建并预览 |
-| `win huipro` / `npm run child` | 子系统构建 |
+| 命令 | 说明          |
+|------|-------------|
+| `win dev` | 开发服务器       |
+| `win build` | 生产构建        |
+| `win preview` | 预览构建        |
+| `win see` | 构建SEE包      |
+| `win huipro` / `npm run child` | 子系统构建       |
 | `npm run lint` / `lint:fix` | Biome 检查/修复 |
-| `win cache` | 清缓存 |
+| `win cache` | 清缓存         |
 
 ---
 

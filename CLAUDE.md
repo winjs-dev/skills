@@ -6,12 +6,12 @@
 
 本项目包含 4 个 WinJS 框架相关的技能，每个对应不同的项目模板：
 
-| 技能 | 模板类型 | 核心场景 |
-|------|---------|---------|
-| **winjs-app** | 移动端 H5 | REM 适配、VConsole、移动端开发 |
-| **winjs-huipro** | 企业级 Web | 自定义 Router、Vuex、权限管理 |
-| **winjs-hybrid** | 混合应用 | 原生桥接、WebView、鸿蒙开发 |
-| **winjs-pc** | PC 端 Web | 桌面浏览器、无移动端适配 |
+| 技能                   | 模板类型   | 核心场景                       |
+| ---------------------- | ---------- | ------------------------------ |
+| **winjs-app**    | 移动端 H5  | REM 适配、VConsole、移动端开发 |
+| **winjs-huipro** | 企业级 Web | 自定义 Router、Vuex、权限管理  |
+| **winjs-hybrid** | 混合应用   | 原生桥接、WebView、鸿蒙开发    |
+| **winjs-pc**     | PC 端 Web  | 桌面浏览器、无移动端适配       |
 
 ## 何时使用这些技能
 
@@ -20,12 +20,14 @@
 当用户提及以下关键词时，你应该主动应用对应技能：
 
 **winjs-app**:
+
 - `create-win app`
 - 移动端 H5 + REM 适配
 - VConsole 调试
 - `.winrc` 配置 + Vue 3
 
 **winjs-huipro**:
+
 - `create-win huipro`
 - `config/config.ts` 配置
 - 自定义 Router + Vuex
@@ -34,6 +36,7 @@
 - 主子系统
 
 **winjs-hybrid**:
+
 - `create-win hybrid`
 - WebView + 原生桥接
 - GmuJSAPI / Light SDK
@@ -41,6 +44,7 @@
 - 鸿蒙/券商应用
 
 **winjs-pc**:
+
 - `create-win pc`
 - PC 浏览器项目
 - 无 REM/VConsole
@@ -91,6 +95,7 @@ troubleshooting.md (排错清单)
 **用户**: "如何配置 REM 适配？"
 
 **处理流程**:
+
 1. 识别为 winjs-app 或 winjs-hybrid（支持 REM）
 2. 读取 `SKILL.md` → 核心配置章节
 3. 查看 `app-reference.md` → convertToRem 详细配置
@@ -101,6 +106,7 @@ troubleshooting.md (排错清单)
 **用户**: "路由守卫不生效"
 
 **处理流程**:
+
 1. 识别模板类型（huipro 特别注意 Vue 2）
 2. 读取 `troubleshooting.md` → 路由相关章节
 3. 检查常见问题（onRouterCreated、Vue.use 顺序等）
@@ -111,6 +117,7 @@ troubleshooting.md (排错清单)
 **用户**: "如何对接原生 API？"
 
 **处理流程**:
+
 1. 识别为 winjs-hybrid
 2. 读取 `SKILL.md` → 应用入口章节
 3. 查看 GmuJSAPI 和 render 钩子说明
@@ -135,14 +142,14 @@ troubleshooting.md (排错清单)
 
 ### 特色功能
 
-| 功能 | app | huipro | hybrid | pc |
-|------|-----|--------|--------|-----|
-| REM 适配 | ✅ | ❌ | ✅ | ❌ |
-| VConsole | ✅ | ❌ | ✅ | ❌ |
-| 自定义 Router | ❌ | ✅ | ❌ | ❌ |
-| TabsManagement | ❌ | ✅ | ❌ | ❌ |
-| 原生桥接 | ❌ | ❌ | ✅ | ❌ |
-| 主子系统 | ❌ | ✅ | ❌ | ❌ |
+| 功能           | app | huipro | hybrid | pc |
+| -------------- | --- | ------ | ------ | -- |
+| REM 适配       | ✅  | ❌     | ✅     | ❌ |
+| VConsole       | ✅  | ❌     | ✅     | ❌ |
+| 自定义 Router  | ❌  | ✅     | ❌     | ❌ |
+| TabsManagement | ❌  | ✅     | ❌     | ❌ |
+| 原生桥接       | ❌  | ❌     | ✅     | ❌ |
+| 主子系统       | ❌  | ✅     | ❌     | ❌ |
 
 ## 最佳实践
 
@@ -153,6 +160,7 @@ troubleshooting.md (排错清单)
 ### 2. 渐进式阅读
 
 不要一次性读取所有文档：
+
 - 先读 SKILL.md 获取全局认知
 - 根据具体问题按需读取 references
 - 只在遇到问题时查阅 troubleshooting
@@ -160,6 +168,7 @@ troubleshooting.md (排错清单)
 ### 3. 精准引用
 
 回答时引用具体章节：
+
 - ✅ "根据 winjs-app/SKILL.md 的核心配置章节..."
 - ✅ "详见 app-reference.md 的 services 章节"
 - ❌ "根据文档..." （太模糊）
@@ -174,6 +183,7 @@ troubleshooting.md (排错清单)
 ### 5. 强调关键注意点
 
 使用 ⚠️ 标记重要事项：
+
 - ⚠️ huipro 的 `modifyClientRenderOpts` 必须返回新对象
 - ⚠️ hybrid 的 `render(oldRender)` 在原生环境需等待 `nativeReady`
 - ⚠️ 所有模板的 `useAppData/getRoute` 只能在组件生命周期中调用
@@ -185,6 +195,7 @@ troubleshooting.md (排错清单)
 **用户**: "我用 create-win app 创建了项目，怎么开启 REM 适配？"
 
 **你的处理**:
+
 1. 识别为 winjs-app
 2. 读取 `winjs-app/SKILL.md`
 3. 定位到核心配置 → convertToRem
@@ -207,12 +218,14 @@ export default defineConfig({
 **用户**: "HuiPro 项目的路由守卫不触发"
 
 **你的处理**:
+
 1. 识别为 winjs-huipro
 2. 读取 `winjs-huipro/troubleshooting.md`
 3. 检查常见问题清单
 4. 回答：
 
 确认以下两点：
+
 1. `src/router/index.js` 中先 `Vue.use(Router)` 再 `new Router()`
 2. 守卫在 `src/app.js` 的 `onRouterCreated` 中注册，非 `router.interceptor.js` 顶层
 
@@ -225,6 +238,7 @@ export default defineConfig({
 **用户**: "Hybrid 项目白屏，原生 API 报错"
 
 **你的处理**:
+
 1. 识别为 winjs-hybrid
 2. 读取 `winjs-hybrid/SKILL.md` → 应用入口
 3. 检查 render 钩子
@@ -274,7 +288,7 @@ HuiPro 特有：
 
 ```bash
 win huipro       # 子系统构建
-win see          # 构建并预览
+win see          # 构建SEE包
 ```
 
 ---

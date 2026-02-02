@@ -120,17 +120,17 @@
 
 ## 脚本速查
 
-| 脚本 | 命令 | 说明 |
-|------|------|------|
-| 开发 | `npm run dev` | `win dev` |
-| 构建 | `npm run build` | `cross-env WIN_APP_ENV=production win build` |
-| 构建并预览 | `npm run build:see` | `npm run build && win see` |
-| 预览 | `npm run preview` | `win preview` |
-| 子系统构建 | `npm run child` | `win huipro` |
-| 子系统构建并预览 | `npm run build:see:child` | `npm run child && win see --hui-pro` |
+| 脚本        | 命令 | 说明 |
+|-----------|------|------|
+| 开发        | `npm run dev` | `win dev` |
+| 构建        | `npm run build` | `cross-env WIN_APP_ENV=production win build` |
+| 构建SEE包    | `npm run build:see` | `npm run build && win see` |
+| 预览        | `npm run preview` | `win preview` |
+| 子系统构建     | `npm run child` | `win huipro` |
+| 子系统构建SEE包 | `npm run build:see:child` | `npm run child && win see --hui-pro` |
 | 检查/修复/格式化 | `npm run lint` / `lint:fix` / `format` | Biome |
-| F2ELint | `npm run f2elint-scan` / `f2elint-fix` | 扫描 / 修复 |
-| 初始化/清缓存 | `npm run setup` / `win cache` | 项目初始化 / 清除缓存 |
+| F2ELint   | `npm run f2elint-scan` / `f2elint-fix` | 扫描 / 修复 |
+| 初始化/清缓存   | `npm run setup` / `win cache` | 项目初始化 / 清除缓存 |
 
 ---
 
