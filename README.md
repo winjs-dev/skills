@@ -1,6 +1,6 @@
 # WinJS Skills
 
-WinJS 框架的 Cursor Agent Skills 集合，为不同的项目模板提供专门的开发指导、配置说明和最佳实践。
+WinJS 框架的 Agent Skills 集合，为不同的项目模板提供专门的开发指导、配置说明和最佳实践。
 
 ## 📦 包含的技能
 
