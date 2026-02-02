@@ -1,0 +1,221 @@
+{
+  "id": "winjs-skills",
+  "name": "WinJS Skills",
+  "version": "1.0.0",
+  "displayName": "WinJS Framework Skills",
+  "description": "专业的 WinJS 框架开发技能集合，支持 App、HuiPro、Hybrid、PC 四种项目模板，提供配置指导、开发规范和问题排查。",
+  "author": {
+    "name": "winjs-dev",
+    "email": "dev@winjs.org",
+    "url": "https://github.com/winjs-dev"
+  },
+  "publisher": "winjs-dev",
+  "license": "MIT",
+  "homepage": "https://github.com/winjs-dev/skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winjs-dev/skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/winjs-dev/skills/issues"
+  },
+  "category": "Development",
+  "keywords": [
+    "winjs",
+    "vue",
+    "vite",
+    "webpack",
+    "frontend",
+    "mobile",
+    "hybrid",
+    "enterprise",
+    "skills",
+    "framework",
+    "rem",
+    "vconsole",
+    "hui",
+    "webview"
+  ],
+  "tags": [
+    "Vue",
+    "Vue 2",
+    "Vue 3",
+    "Vite",
+    "Webpack",
+    "Mobile H5",
+    "Enterprise Admin",
+    "Hybrid App",
+    "PC Web"
+  ],
+  "capabilities": {
+    "languages": ["zh-CN"],
+    "frameworks": ["Vue", "Vue Router", "Vuex", "Vite", "Webpack"],
+    "platforms": ["Web", "Mobile", "Hybrid", "Desktop"],
+    "features": [
+      "模板识别",
+      "配置指导",
+      "问题排查",
+      "代码示例",
+      "渐进式文档"
+    ]
+  },
+  "skills": [
+    {
+      "id": "winjs-app",
+      "name": "WinJS App",
+      "description": "移动端 H5 开发技能",
+      "category": "Mobile",
+      "icon": "📱",
+      "techStack": ["Vue 3", "Vite", "REM", "VConsole"],
+      "features": [
+        "REM 自适应",
+        "VConsole 调试",
+        "移动端优化",
+        "请求封装"
+      ]
+    },
+    {
+      "id": "winjs-huipro",
+      "name": "WinJS HuiPro",
+      "description": "企业级 Web 开发技能",
+      "category": "Enterprise",
+      "icon": "🏢",
+      "techStack": ["Vue 2", "Webpack", "HUI", "Vuex"],
+      "features": [
+        "自定义路由",
+        "TabsManagement",
+        "权限管理",
+        "主子系统"
+      ]
+    },
+    {
+      "id": "winjs-hybrid",
+      "name": "WinJS Hybrid",
+      "description": "混合应用开发技能",
+      "category": "Hybrid",
+      "icon": "🔗",
+      "techStack": ["Vue 3", "Vite", "WebView", "Native Bridge"],
+      "features": [
+        "原生桥接",
+        "WebView 控制",
+        "容器内跳转",
+        "离线包支持"
+      ]
+    },
+    {
+      "id": "winjs-pc",
+      "name": "WinJS PC",
+      "description": "PC 端 Web 开发技能",
+      "category": "Desktop",
+      "icon": "💻",
+      "techStack": ["Vue 3", "Vite"],
+      "features": [
+        "PC 优化",
+        "桌面浏览器",
+        "性能优化",
+        "模块联邦"
+      ]
+    }
+  ],
+  "documentation": {
+    "getting-started": "../README.md",
+    "ai-guide": "../AGENT.md",
+    "claude-guide": "../CLAUDE.md",
+    "configuration": "../.claude-plugin.md"
+  },
+  "resources": {
+    "official-docs": "https://winjs-dev.github.io/winjs-docs/",
+    "github": "https://github.com/winjs-dev",
+    "npm": "https://www.npmjs.com/package/create-win"
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0
+  },
+  "support": {
+    "email": "support@winjs.org",
+    "documentation": "https://winjs-dev.github.io/winjs-docs/",
+    "issues": "https://github.com/winjs-dev/skills/issues",
+    "community": "https://github.com/winjs-dev/skills/discussions"
+  },
+  "screenshots": [
+    {
+      "title": "WinJS App - 移动端 H5 开发",
+      "description": "支持 REM 适配和 VConsole 调试的移动端开发技能",
+      "url": "screenshots/winjs-app.png"
+    },
+    {
+      "title": "WinJS HuiPro - 企业级后台",
+      "description": "包含自定义路由、权限管理的企业级开发技能",
+      "url": "screenshots/winjs-huipro.png"
+    },
+    {
+      "title": "WinJS Hybrid - 混合应用",
+      "description": "支持原生桥接和 WebView 控制的混合应用技能",
+      "url": "screenshots/winjs-hybrid.png"
+    },
+    {
+      "title": "WinJS PC - PC 端 Web",
+      "description": "专注桌面浏览器的 PC 端开发技能",
+      "url": "screenshots/winjs-pc.png"
+    }
+  ],
+  "changelog": {
+    "1.0.0": {
+      "date": "2026-02-02",
+      "changes": [
+        "初始版本发布",
+        "包含 4 个 WinJS 模板技能",
+        "完整的文档体系（26 个文档）",
+        "AI 集成配置",
+        "渐进式文档披露设计"
+      ]
+    }
+  },
+  "requirements": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0",
+    "platforms": ["darwin", "linux", "win32"]
+  },
+  "aiIntegration": {
+    "autoTrigger": true,
+    "contextAware": true,
+    "triggerKeywords": [
+      "winjs",
+      "create-win",
+      ".winrc",
+      "config/config.ts",
+      "REM 适配",
+      "VConsole",
+      "HUI",
+      "TabsManagement",
+      "GmuJSAPI",
+      "WebView"
+    ],
+    "supportedAIs": [
+      "Claude",
+      "Cursor",
+      "GitHub Copilot",
+      "OpenAI"
+    ]
+  },
+  "quality": {
+    "documentation": "完善",
+    "codeExamples": true,
+    "troubleshooting": true,
+    "bestPractices": true,
+    "maintained": true
+  },
+  "stats": {
+    "totalSkills": 4,
+    "totalDocuments": 26,
+    "documentationSize": "约 50KB",
+    "supportedTemplates": 4
+  },
+  "metadata": {
+    "created": "2026-02-02",
+    "updated": "2026-02-02",
+    "status": "stable",
+    "maturity": "production-ready"
+  }
+}

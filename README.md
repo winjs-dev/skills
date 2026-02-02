@@ -72,7 +72,7 @@ export default defineConfig({
 })
 ```
 
-[查看详细文档 →](./winjs-app/SKILL.md)
+[查看详细文档 →](./skills/winjs-app/SKILL.md)
 
 ### winjs-huipro（企业级 Web）
 
@@ -91,7 +91,7 @@ export default defineConfig({
 - 自定义 Router 实例（`src/router/`）
 - HUI 企业级组件库
 
-[查看详细文档 →](./winjs-huipro/SKILL.md)
+[查看详细文档 →](./skills/winjs-huipro/SKILL.md)
 
 ### winjs-hybrid（混合应用）
 
@@ -109,7 +109,7 @@ export default defineConfig({
 - 支持 WebView 容器内跳转（navigateTo）
 - 支持离线包配置
 
-[查看详细文档 →](./winjs-hybrid/SKILL.md)
+[查看详细文档 →](./skills/winjs-hybrid/SKILL.md)
 
 ### winjs-pc（PC 端 Web）
 
@@ -125,7 +125,7 @@ export default defineConfig({
 - 专注 PC 浏览器（Chrome、Firefox、Safari、Edge）
 - 使用 Vite 构建，性能优化
 
-[查看详细文档 →](./winjs-pc/SKILL.md)
+[查看详细文档 →](./skills/winjs-pc/SKILL.md)
 
 ## 🔍 功能对比
 
@@ -216,18 +216,23 @@ skills/
 ├── README.md                   # 本文件
 ├── AGENT.md                    # AI 代理快速参考
 ├── CLAUDE.md                   # Claude 使用教程
-├── winjs-app/                  # App 模板技能
-│   ├── SKILL.md
-│   └── references/
-├── winjs-huipro/               # HuiPro 模板技能
-│   ├── SKILL.md
-│   └── references/
-├── winjs-hybrid/               # Hybrid 模板技能
-│   ├── SKILL.md
-│   └── references/
-└── winjs-pc/                   # PC 模板技能
-    ├── SKILL.md
-    └── references/
+├── DOCS_INDEX.md               # 完整文档索引
+├── .claude-plugin.md           # 插件配置说明
+├── .claude-plugin/             # 插件配置目录
+│   └── marketplace.json       # Marketplace 配置
+└── skills/                     # 技能目录
+    ├── winjs-app/              # App 模板技能
+    │   ├── SKILL.md
+    │   └── references/
+    ├── winjs-huipro/           # HuiPro 模板技能
+    │   ├── SKILL.md
+    │   └── references/
+    ├── winjs-hybrid/           # Hybrid 模板技能
+    │   ├── SKILL.md
+    │   └── references/
+    └── winjs-pc/               # PC 模板技能
+        ├── SKILL.md
+        └── references/
 ```
 
 ## 📄 许可证
